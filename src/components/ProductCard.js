@@ -1,10 +1,15 @@
-import ReactStars from "react-stars";
 import React from "react";
-import { Link } from "react-router-dom";
+import ReactStars from "react-stars";
+import { Link, useLocation } from "react-router-dom";
 
-const ProductCard = ()  => {
+
+const ProductCard = (props)  => {
+    const { grid } = props;
+    let location = useLocation();
+
     return (
-    
+        <>
+        <div className={` ${location.pathname === "/promotion" ? `gr-${grid}` : "col-12"}`}>
         <Link className="product-card position-relative">
             <div className="wishlist-icon position-absolute">
                 <Link>
@@ -41,6 +46,8 @@ const ProductCard = ()  => {
                     </div>
                 </div>
         </Link>
+        </div>
+    </>
   )
 }
 

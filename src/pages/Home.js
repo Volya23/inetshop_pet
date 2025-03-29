@@ -49,7 +49,7 @@ const Home = () => {
                         <div className="main-banner-content position-absolute d-flex flex-column align-items-center w-50 h-100 d-inline-block">
                           <h1 className="">Не пр<img src="images/paw_banner-1.png" className="banner d-inline-block" alt="paw" />ходь повз</h1>
                             <p>Ми можемо їм допомогти</p>
-                            <Link className="btn button-dark">Подарувати дім</Link>
+                            <Link className="button-dark">Подарувати дім</Link>
                         </div>
                       </div>
                       <div className="main-banner position-relative min-vw-120">
@@ -61,7 +61,7 @@ const Home = () => {
                         <div className="main-banner-content-light d-flex flex-column align-items-end">
                             <h1>У нас є все і навіть більше</h1>
                             <p>Приємних покупок ❤️</p>
-                            <Link className="btn button-light">До покупок</Link>
+                            <Link className="button-light">До покупок</Link>
                           </div>
                         </div>
               </Slider>
@@ -95,7 +95,7 @@ const Home = () => {
            </div>
       </section>
       <section className="new-wrapper py-5 px-5 home-wrapper-2">
-        <div className="container-xx">
+        <div className="container-xxl">
           <div className="row">
             <div className="col-12">
               <Link className="section-heading fs-2">Новинки</Link>
