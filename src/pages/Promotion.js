@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
-
+import ReactStars from "react-stars";
+import ProductCard from "../components/ProductCard";
 
 const Promotion = () => {
+  const [grid, setGrid] = useState(4);
+
   return (
     <>
         <Meta title={"Акції"} />
@@ -176,8 +179,98 @@ const Promotion = () => {
                       </div>
                     </div>
                   </div>
-                <div className="col-9"></div>
+                  <div className="filter-card rounded-3 mt-4">
+                        <h3 className="filter-title">Випадкові товари</h3>
+                      <div className="random-products mb-3 d-flex">
+                        <div className="w-50">
+                          <img
+                              src="images/product/2.png"
+                              className="img-fluid"
+                              alt="kitty_food"
+                          />
+                        </div>
+                        <div className="w-50">
+                          <h5 className="text-center mt-5">Royal Canin до 12 місяців</h5>
+                            <ReactStars
+                              count={5}
+                              size={24}
+                              value={4.5}
+                              edit={false}
+                              color2={"#ffd700"}
+                            />
+                            <b><span>299 грн</span> &nbsp; <strike>345 грн</strike></b>
+                        </div>
+                      </div>
+                      <div className="random-products d-flex">
+                        <div className="w-50">
+                          <img
+                               src="images/product/2.png"
+                              className="img-fluid"
+                              alt="kitty_food"
+                          />
+                        </div>
+                        <div className="w-50">
+                          <h5 className="text-center mt-5">Royal Canin до 12 місяців</h5>
+                            <ReactStars
+                              count={5}
+                              size={24}
+                              value={4.5}
+                              edit={false}
+                              color2={"#ffd700"}
+                            />
+                            <b><span>299 грн</span> &nbsp; <strike>345 грн</strike></b>
+                        </div>
+                      </div>
+                  </div>
               </div>
+              <div className="col-9">
+                  <div className="filter-sort-grid mb-4">
+                    <div className="d-flex justify-content-between align-items-center">
+                    <div className="d-flex align-items-center gap-10">
+                      <p className="mb-0 d-block">Сортування:</p>
+                        <select name="" className="form-control form-select" id="">
+                          <option value="manual" selected="selected">за замовчуванням</option>
+                          <option value="best-selling">популярні</option>
+                          <option value="title-ascending">за назвою</option>
+                          <option value="price-ascending">спочатку дешевше</option>
+                          <option value="price-descending">спочатку дорожче</option>
+                          <option value="created-ascending">спочатку нові</option>
+                        </select>
+                    </div>
+                    <div className="d-flex align-items-center gap-10 grid">
+                      <img 
+                        onClick={() => { setGrid(3); console.log("Grid set to 3"); }}
+                        src="images/4-v.svg" 
+                        className="d-block img-fluid" 
+                        alt="grid" 
+                      />
+                      <img
+                        onClick={() => { setGrid(4);}}
+                        src="images/3-v.svg"
+                        className="d-block img-fluid"
+                        alt="grid"
+                      />
+                      <img 
+                        onClick={() => { setGrid(6);}}
+                        src="images/2-v.svg"
+                        className="d-block img-fluid"
+                        alt="grid"
+                      />
+                      <img 
+                        onClick={() => { setGrid(12);}}
+                        src="images/3-h.svg"
+                        className="d-block img-fluid"
+                        alt="grid"
+                      />
+                    </div>
+                    </div>
+                    <div className="products-list pb-5">
+                      <div className="d-flex gap-10 flex-wrap">
+                        <ProductCard key={grid} grid={grid} />
+                      </div>
+                </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
