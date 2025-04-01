@@ -13,7 +13,9 @@
   --color-777777: #777777;
   --color-bf4800: #bf4800;
   --color-131921: #131921;
-  --color-e4e2e2: #e4e2e2
+  --color-e4e2e2: #e4e2e2;
+  --color-1c1c1b: #1c1c1b;
+  --color-f5f5f7: #f5f5f7;
 }
 
 .section-heading {
@@ -529,6 +531,43 @@ footer .cash_icons img.mono {
   margin: auto;
   display: block;
 }
+
+.compare-product-card {
+  padding: 20px 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.compare-product-card .cross {
+  top: 5px;
+  right: 5px;
+  width: 25px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.compare-product-details h5.title {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--color-1c1c1b);
+}
+
+.compare-product-details h6.price {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.compare-product-card .product-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  border-top: 1px solid var(--color-f5f5f7);
+}
+
+
 
 
 /*adaptation*/

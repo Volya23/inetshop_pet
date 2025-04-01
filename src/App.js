@@ -5,8 +5,8 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import Promotion from './pages/Promotion';
 import Blog from './pages/Blog';
-import NewProducts from './pages/NewProducts';
 import News from './pages/News';
+import CompareProduct from './pages/CompareProduct';
 
 function App() {
   return (
@@ -17,8 +17,8 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/promotion" element={<Promotion />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/newProducts" element={<NewProducts />} />
         <Route path="/news" element={<News />} />
+        <Route path="/compare-product" element={<CompareProduct />} />
       </Route>
     </Routes>
     </BrowserRouter>
