@@ -283,22 +283,25 @@ footer .cash_icons img.mono {
   object-fit: contain;
 }
 
-.blog-card {
+.blog-card, .news-card {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
+  margin: 20px;
 }
 
-.blog-card img {
+.blog-card img,
+.news-card img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.blog-content {
+.blog-content, .news-content {
   padding: 15px;
 }
 
-.blog-content p.date {
+.blog-content p.date,
+.news-content p.date {
   font-size: 13px;
   line-height: 24px;
   text-transform: uppercase;
@@ -314,7 +317,8 @@ footer .cash_icons img.mono {
   text-align: center;
 }
 
-.blog-content p.desc {
+.blog-content p.desc, 
+.news-content p.desc {
   font-size: 13px;
   line-height: 22px;
   color: var(--color-777777);

@@ -109,8 +109,8 @@ export const Header = () => {
                 <div className="d-flex align-items-center gap-15">
                   <NavLink to="/">Головна</NavLink>
                   <NavLink to="/promotion">Акції</NavLink>
-                  <NavLink to="/">Новини</NavLink>
-                  <NavLink to="/">Блог</NavLink>
+                  <NavLink to="/news">Новини</NavLink>
+                  <NavLink to="/blog">Блог</NavLink>
                 </div>
               </div>
             </div>
