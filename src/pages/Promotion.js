@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import ReactStars from "react-stars";
-import ProductCard from "../components/ProductCard";
+import PromoCard from "../components/PromoCard";
 
 const Promotion = () => {
   const [grid, setGrid] = useState(4);
@@ -266,7 +266,7 @@ const Promotion = () => {
                     </div>
                     <div className="products-list pb-5">
                       <div className="d-flex gap-10 flex-wrap">
-                        <ProductCard key={grid} grid={grid} />
+                        <PromoCard key={grid} grid={grid} />
                       </div>
                 </div>
                   </div>

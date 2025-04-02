@@ -57,7 +57,7 @@ export const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-black">
+                  <Link to="/favorite" className="d-flex align-items-center gap-10 text-black">
                     <img src="images/favorite.svg" alt="favorite" />
                     <p className="mb-0">Улюблені</p>
                   </Link>

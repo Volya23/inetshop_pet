@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
-import Promotion from "../components/Promotion";
+import Promotion from "../components/Promotions";
 
 
 const Home = () => {
@@ -98,7 +98,10 @@ const Home = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
+              <div className="d-flex justify-content-between pb-3">
               <Link className="section-heading fs-2">Новинки</Link>
+              <Link className="button-dark">Всі новинки</Link>
+              </div>
             </div>
             <Slider {...settings_lazy}>
           <ProductCard />
@@ -115,7 +118,10 @@ const Home = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <Link className="section-heading fs-2">Акції та знижки</Link>
+              <div className="d-flex justify-content-between pb-3">
+                <Link to="/promotion" className="section-heading fs-2">Акції та знижки</Link>
+                <Link to="/promotion" className="button-dark">Переглянути</Link>
+              </div>
             </div>
             <div className="row">
               <Promotion />
@@ -171,7 +177,10 @@ const Home = () => {
         <div className="container-xx">
           <div className="row mx-3">
             <div className="col-12">
-              <h3 className="section-heading">Корисні статті</h3>
+              <div className="d-flex justify-content-between pb-3">
+                <Link to="/blog" className="section-heading fs-2">Корисні статті</Link>
+                <Link to="/blog" className="button-dark">Всі статті</Link>
+              </div>
             </div>
           </div>
           <div className="row">

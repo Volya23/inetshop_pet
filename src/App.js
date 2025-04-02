@@ -7,6 +7,7 @@ import Promotion from './pages/Promotion';
 import Blog from './pages/Blog';
 import News from './pages/News';
 import CompareProduct from './pages/CompareProduct';
+import Favorite from './pages/Favorite';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/news" element={<News />} />
         <Route path="/compare-product" element={<CompareProduct />} />
+        <Route path="/favorite" element={<Favorite />} />
       </Route>
     </Routes>
     </BrowserRouter>

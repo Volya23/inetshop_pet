@@ -3,7 +3,7 @@ import ReactStars from "react-stars";
 import { Link } from "react-router-dom";
 
 
-const Promotion = () => {
+const Promotions = () => {
   return (
     <div className="col-4">
         <div className="promotion-card d-flex align-items-center p-4">
@@ -51,6 +51,6 @@ const Promotion = () => {
   )
 }
 
-export default Promotion;
+export default Promotions;
 
 
