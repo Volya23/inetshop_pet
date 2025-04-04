@@ -21,8 +21,8 @@ const Footer = () => {
           <div className="col-3">
             <h4 className="mb-4">Інформація</h4>
             <div className="footer-link d-flex flex-column text-black">
-              <Link className="py-2 mb-1">Оплата та доставка</Link>
-              <Link className="py-2 mb-1">Повернення</Link>
+              <Link to="/payment" className="py-2 mb-1">Оплата та доставка</Link>
+              <Link to="/return-product" className="py-2 mb-1">Повернення</Link>
               <Link className="py-2 mb-1">Бренди</Link>
             </div>
           </div>
@@ -68,7 +68,7 @@ const Footer = () => {
       <div className="container-xxl">
         <div className="row">
           <div className="col-12">
-            <Link className="d-flex justify-content-center"><img src="images/logo-1.png" alt="Hürrem" /></Link>
+            <Link to="/" className="d-flex justify-content-center"><img src="images/logo-1.png" alt="Hürrem" /></Link>
             <p className="text-center mb-0">
               &copy; {new Date().getFullYear()} Hürrem. Всі права захищені.
             </p>
