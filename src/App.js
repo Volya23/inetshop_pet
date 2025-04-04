@@ -8,6 +8,7 @@ import Blog from './pages/Blog';
 import News from './pages/News';
 import CompareProduct from './pages/CompareProduct';
 import Favorite from './pages/Favorite';
+import Payment from './pages/Payment';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/compare-product" element={<CompareProduct />} />
         <Route path="/favorite" element={<Favorite />} />
+        <Route path="/payment" element={<Payment />} />
       </Route>
     </Routes>
     </BrowserRouter>

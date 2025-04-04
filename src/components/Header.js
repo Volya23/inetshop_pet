@@ -9,7 +9,7 @@ export const Header = () => {
       <div className="container-xxl">
         <div className="row">
           <div className="col-6">
-              <Link className="header-top-strip-link text-black fs-5">Оплата та доставка</Link>
+              <Link to="/payment" className="header-top-strip-link text-black fs-5">Оплата та доставка</Link>
           </div>
           <div className="col-6">
             <p className="text-end text-black mb-0 fs-5">
