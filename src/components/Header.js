@@ -23,8 +23,8 @@ export const Header = () => {
               </button>
                 <ul className="dropdown-menu"
                     area-aria-labelledby="dropdownMenuButton1">
-                    <li><a className="dropdown-item" href="/">Реестрація</a></li>
-                    <li><a className="dropdown-item" href="/">Вхід</a></li>
+                    <li><a className="dropdown-item" href="/signon">Реєстрація</a></li>
+                    <li><a className="dropdown-item" href="/signin">Вхід</a></li>
                     </ul>
           </div>
           </div>
