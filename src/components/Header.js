@@ -12,12 +12,21 @@ export const Header = () => {
               <Link to="/payment" className="header-top-strip-link text-black fs-5">Оплата та доставка</Link>
           </div>
           <div className="col-6">
-            <p className="text-end text-black mb-0 fs-5">
-            <Link className="header-top-strip-link text-black">
-              <img src="images/account.svg" alt="account"/>
-              Кабінет
-              </Link>
-            </p>
+            <div className="dropdown d-grid gap-2 d-md-flex justify-content-md-end">
+              <button className="btn btn-outline-light btn-secondary dropdown-toggle bg-transparent border-0 gap-15 text-black d-flex align-items-center fs-5"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                      <img src="images/account.svg" alt="account"/>
+                      <span className="me-6 d-inline-block">Кабінет</span>
+              </button>
+                <ul className="dropdown-menu"
+                    area-aria-labelledby="dropdownMenuButton1">
+                    <li><a className="dropdown-item" href="/">Реестрація</a></li>
+                    <li><a className="dropdown-item" href="/">Вхід</a></li>
+                    </ul>
+          </div>
           </div>
         </div>
       </div>

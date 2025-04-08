@@ -14,11 +14,9 @@ const CompareProduct = () => {
         <div className="row">
           <div className="col-3">
             <div className="compare-product-card position-relative">
-                <img
-                    src="images/close.svg"
-                    className="position-absolute cross img-fluid"
-                    alt="cross"
-                />
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="button" className="btn-close" aria-label="Close"></button>
+              </div>
                 <div className="product-card-image">
                     <img
                         src="images/product/1.1.png"
