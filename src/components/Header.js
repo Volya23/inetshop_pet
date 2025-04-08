@@ -37,7 +37,7 @@ export const Header = () => {
           <div className="col-2">
             <div className="header-upper-links d-flex align-items-center justify-content-between">
               <div>
-                <Link>
+                <Link to="/">
                   <img className="logo" src="images/Group 3.svg" alt="Hürrem" />
                 </Link>
               </div>
@@ -58,7 +58,7 @@ export const Header = () => {
           </div>
           </div>
           <div className="col-5">
-              <div className="header-upper-links d-flex align-items-center justify-content-between">
+              <div className="header-upper-links d-flex align-items-center justify-content-around">
                 <div>
                   <Link to="/compare-product" className="d-flex align-items-center gap-10 text-black">
                     <img src="images/compare.svg" alt="compare" />
