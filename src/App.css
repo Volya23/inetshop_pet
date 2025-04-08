@@ -210,10 +210,10 @@ footer .cash_icons img.mono {
 }
 
 .slick-prev, .slick-next {
-  width: 40px !important;   /* Розмір кнопок */
-  height: 60px !important;  /* Висота кнопок */
-  background-color: rgba(240, 181, 31, 0.8) !important; /* Жовтий фон */
-  border-radius: 10px !important; /* Округлі кути (змінюй значення) */
+  width: 40px !important;
+  height: 60px !important;
+  background-color: rgba(240, 181, 31, 0.8) !important;
+  border-radius: 10px !important;
   z-index: 1000 !important;
   display: flex !important;
   justify-content: center !important;
@@ -223,7 +223,7 @@ footer .cash_icons img.mono {
 
 .slick-prev::before, .slick-next::before {
   font-size: 20px !important;
-  color: rgb(255, 255, 255) !important; /* Білий колір стрілки */
+  color: rgb(255, 255, 255) !important;
 }
 
 .main-banner-content-light {
@@ -245,6 +245,7 @@ footer .cash_icons img.mono {
   margin: 10px 12px;
   padding: 20px;
 }
+
 .main-banner-content-light p {
   font-weight: 700;
   font-size: 36px;
@@ -297,7 +298,8 @@ footer .cash_icons img.mono {
   border-top-right-radius: 10px;
 }
 
-.blog-content, .news-content {
+.blog-content,
+.news-content {
   padding: 15px;
 }
 
@@ -326,7 +328,8 @@ footer .cash_icons img.mono {
   text-align: justify;
 }
 
-.product-card {
+.product-card,
+.favorite-product-card {
   padding: 15px;
   background-color: white;
   border-radius: 10px;
@@ -534,21 +537,12 @@ footer .cash_icons img.mono {
 
 .compare-product-card {
   padding: 20px 15px;
-  background-color: white;
+  background-color: var(--color-f9f4ea);
   border-radius: 10px;
 }
 
-.compare-product-card .cross,
-.favorite-card .cross {
-  top: 5px;
-  right: 5px;
-  width: 25px;
-  padding: 3px;
-  cursor: pointer;
-}
-
 .compare-product-details h5.title,
-.favorite-card h5.title {
+.favorite-product-card h5.title {
   font-size: 15px;
   line-height: 22px;
   font-weight: 500;
@@ -558,7 +552,7 @@ footer .cash_icons img.mono {
 }
 
 .compare-product-details h6.price,
-.favorite-card h6.price {
+.favorite-product-card h6.price {
   font-size: 15px;
   line-height: 22px;
   font-weight: 400;
