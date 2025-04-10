@@ -567,21 +567,28 @@ footer .cash_icons img.mono {
 }
 
 .auth-card {
-  background-image: url("../public/images/bg_form.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 400px;
-  height: 440px;
+  background-color: var(--color-f9f4ea);
+  width: 440px;
+  height: 400px;
   padding: 60px 40px;
   border-radius: 12px;
-  margin: 0 auto;
+  margin: 30px auto;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   z-index: 2;
   position: relative;
 }
 
 .auth-card h3 {
-  color: white;
+  color: var(--color-003459);
+  font-weight: 500;
+}
+
+.auth-card .form-control {
+  height: 45px;
+  width: 350px;
+  background-color: var(--color-f5f5f7);
+  color: var(--color-777777);
+  
 }
 
 

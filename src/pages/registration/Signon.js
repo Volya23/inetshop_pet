@@ -1,5 +1,4 @@
 import React from "react";
-import BreadCrumb from "../../components/BreadCrumb";
 import Meta from "../../components/Meta";
 import {Formik, Form, Field} from 'formik';
 import { Link } from "react-router-dom";
@@ -18,7 +17,6 @@ const onSubmit = (values, actions) => {
   return (
     <>
     <Meta title={"Реєстрація"} />
-    <BreadCrumb title=" Реєстрація" />
 
     <div className="signon-wrapper py-5 home-wrapper-2">
       <div className="row justify-content-center">
@@ -46,7 +44,7 @@ const onSubmit = (values, actions) => {
                                   placeholder="Введіть пароль"
                                   />
                                   <div className="mt-2">
-                                    <Link to="/forgot-password" className="text-white text-decoration-underline">Забули пароль?</Link>
+                                    <Link to="/forgot-password" className="text-black text-decoration-underline">Забули пароль?</Link>
                                   </div>
                                   <button className="button-dark mt-3 border-0" type="submit">Зареєструватись</button>
                               </Form>
