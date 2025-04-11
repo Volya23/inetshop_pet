@@ -327,6 +327,17 @@ footer .cash_icons img.mono {
   text-align: justify;
 }
 
+.single-blog-card p.desc {
+  text-align: justify;
+  text-indent: 40px;
+}
+
+.single-blog-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-003459);
+}
+
 .product-card,
 .favorite-product-card {
   padding: 15px;
@@ -590,6 +601,7 @@ footer .cash_icons img.mono {
   color: var(--color-777777);
   
 }
+
 
 
 

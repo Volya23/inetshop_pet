@@ -6,7 +6,9 @@ import Home from './pages/Home';
 
 import Promotion from './pages/Promotion';
 import Blog from './pages/Blog';
+import SingleBlog from './pages/SingleBlog';
 import News from './pages/News';
+import SingleNews from './pages/SingleNews';
 
 import CompareProduct from './pages/CompareProduct';
 import Favorite from './pages/Favorite';
@@ -26,18 +28,20 @@ function App() {
       <Route path= "/" element={<Layout />}>
         <Route index element={<Home />} />
 
-        <Route path="/promotion" element={<Promotion />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/news" element={<News />} />
+        <Route path="promotion" element={<Promotion />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="blog/:id" element={<SingleBlog />} />
+        <Route path="news" element={<News />} />
+        <Route path="news/:id" element={<SingleNews />} />
 
-        <Route path="/compare-product" element={<CompareProduct />} />
-        <Route path="/favorite" element={<Favorite />} />
-        <Route path="/payment" element={<Payment />} />
-        <Route path="/return-product" element={<ReturnProduct />} />
+        <Route path="compare-product" element={<CompareProduct />} />
+        <Route path="favorite" element={<Favorite />} />
+        <Route path="payment" element={<Payment />} />
+        <Route path="return-product" element={<ReturnProduct />} />
         
-        <Route path="/signon" element={<Signon />} />
-        <Route path="/forgot-password" element={<Forgotpassword />} />
-        <Route path="/signin" element={<Signin />} />
+        <Route path="signon" element={<Signon />} />
+        <Route path="forgot-password" element={<Forgotpassword />} />
+        <Route path="signin" element={<Signin />} />
       </Route>
     </Routes>
     </BrowserRouter>
