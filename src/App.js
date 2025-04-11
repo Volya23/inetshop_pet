@@ -9,6 +9,7 @@ import Blog from './pages/Blog';
 import SingleBlog from './pages/SingleBlog';
 import News from './pages/News';
 import SingleNews from './pages/SingleNews';
+import Adoption from './pages/Adoption';
 
 import CompareProduct from './pages/CompareProduct';
 import Favorite from './pages/Favorite';
@@ -18,6 +19,7 @@ import ReturnProduct from './pages/ReturnProduct';
 import Signon from './pages/registration/Signon';
 import Forgotpassword from './pages/registration/Forgotpassword';
 import Signin from './pages/registration/Signin';
+
 
 
 function App() {
@@ -33,6 +35,7 @@ function App() {
         <Route path="blog/:id" element={<SingleBlog />} />
         <Route path="news" element={<News />} />
         <Route path="news/:id" element={<SingleNews />} />
+        <Route path="adoption" element={<Adoption />} />
 
         <Route path="compare-product" element={<CompareProduct />} />
         <Route path="favorite" element={<Favorite />} />

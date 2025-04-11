@@ -49,7 +49,7 @@ const Home = () => {
                         <div className="main-banner-content position-absolute d-flex flex-column align-items-center w-50 h-100 d-inline-block">
                           <h1 className="">Не пр<img src="images/paw_banner-1.png" className="banner d-inline-block" alt="paw" />ходь повз</h1>
                             <p>Ми можемо їм допомогти</p>
-                            <Link className="button-dark">Подарувати дім</Link>
+                            <Link to="/adoption" className="button-dark">Подарувати дім</Link>
                         </div>
                       </div>
                       <div className="main-banner position-relative min-vw-120">
