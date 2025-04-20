@@ -105,12 +105,13 @@ export const Header = () => {
                     className="dropdown-menu"
                     area-aria-labelledby="dropdownMenuButton1"
                     >
-                      <li><a className="dropdown-item" href="/">Товари для собак</a></li>
-                      <li><a className="dropdown-item" href="/">Товари для котів</a></li>
-                      <li><a className="dropdown-item" href="/">Товари для гризунів</a></li>
-                      <li><a className="dropdown-item" href="/">Товари для пернатих</a></li>
-                      <li><a className="dropdown-item" href="/">Товари для рептилій</a></li>
-                      <li><a className="dropdown-item" href="/">Товари для риб</a></li>
+                      <li><a className="dropdown-item" href="/dog">Товари для собак</a>
+                      </li>
+                      <li><a className="dropdown-item" href="/cat">Товари для котів</a></li>
+                      <li><a className="dropdown-item" href="/rodent">Товари для гризунів</a></li>
+                      <li><a className="dropdown-item" href="/bird">Товари для пернатих</a></li>
+                      <li><a className="dropdown-item" href="/reptile">Товари для рептилій</a></li>
+                      <li><a className="dropdown-item" href="/finfish">Товари для риб</a></li>
                     </ul>
                  </div>
               </div>
