@@ -1,35 +1,21 @@
 import React, { useState } from "react";
-import BreadCrumb from "../components/BreadCrumb";
-import Meta from "../components/Meta";
+import BreadCrumb from "../../../components/BreadCrumb";
+import Meta from "../../../components/Meta";
 import ReactStars from "react-stars";
-import PromoCard from "../components/PromoCard";
+import PromoCard from "../../../components/PromoCard";
 
-const Promotion = () => {
-  const [grid, setGrid] = useState(4);
-
+const DogComfort = () => {
+    const [grid, setGrid] = useState(4);
   return (
     <>
-        <Meta title={"Акції"} />
-        <BreadCrumb title=" Акції" />
-        <div className="store-wrapper home-wrapper-2 py-5">
+    <Meta title={"Собаки"} />
+    <BreadCrumb title=" Комфорт для собак" />
+
+    <div className="store-wrapper home-wrapper-2 py-5">
           <div className="container-xxl">
             <div className="row">
               <div className="col-3">
                 <div className="filter-card rounded-top-3">
-                    <h3 className="filter-title">Категорії</h3>
-                    <div>
-                      <ul className="ps-0">
-                        <li>Товари для собак</li>
-                        <li>Товари для котів</li>
-                        <li>Товари для риб</li>
-                        <li>Товари для рептилій</li>
-                        <li>Товари для пернатих</li>
-                        <li>Товари для гризунів</li>
-                        <li>Ветеринария</li>
-                      </ul>
-                    </div>
-                </div>
-                  <div className="filter-card">
                       <h3 className="filter-title">Бренд</h3>
                     <div>
                       <div className="form-check">
@@ -87,8 +73,117 @@ const Promotion = () => {
                           <label className="form-check-label" htmlFor="">Amity (0)</label>
                       </div>
                     </div>
+                </div>
+                  <div className="filter-card">
+                      <h3 className="filter-title">Тип</h3>
+                    <div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Лежаки</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Матраци</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Пледи</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Будиночки</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Підстилки</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Охолоджуючі килимки</label>
+                      </div>
+                    </div>
                   </div>
                   <div className="filter-card">
+                      <h3 className="filter-title">Розмір породи</h3>
+                    <div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Маленька порода</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Середня порода</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Велика порода</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Гігантська порода</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Для всіх пород</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="filter-card rounded-bottom-3">
                         <h5 className="filter-title">Ціна</h5>
                       <div className="d-flex align-items-center gap-10">
                         <div className="form-floating mb-3">
@@ -110,74 +205,6 @@ const Promotion = () => {
                               <label htmlFor="floatingInput">До</label>
                         </div>
                       </div>
-                  </div>
-                  <div className="filter-card rounded-bottom-3">
-                      <h3 className="filter-title">Призначення</h3>
-                    <div>
-                      <div className="form-check">
-                        <input
-                        className="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id=""
-                        />
-                        <label className="form-check-label" htmlFor="">Корм</label>
-                      </div>
-                      <div className="form-check">
-                        <input
-                        className="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id=""
-                        />
-                        <label className="form-check-label" htmlFor="">Одяг та взяття</label>
-                      </div>
-                      <div className="form-check">
-                        <input
-                        className="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id=""
-                        />
-                        <label className="form-check-label" htmlFor="">Смаколики</label>
-                      </div>
-                      <div className="form-check">
-                        <input
-                        className="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id=""
-                        />
-                        <label className="form-check-label" htmlFor="">Вітаміни</label>
-                      </div>
-                      <div className="form-check">
-                        <input
-                        className="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id=""
-                        />
-                        <label className="form-check-label" htmlFor="">Посуд</label>
-                      </div>
-                      <div className="form-check">
-                        <input
-                        className="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id=""
-                        />
-                        <label className="form-check-label" htmlFor="">Догляд та гігієна</label>
-                      </div>
-                      <div className="form-check">
-                        <input
-                        className="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id=""
-                        />
-                        <label className="form-check-label" htmlFor="">Іграшки</label>
-                      </div>
-                    </div>
                   </div>
                   <div className="filter-card rounded-3 mt-4">
                         <h3 className="filter-title">Випадкові товари</h3>
@@ -276,6 +303,6 @@ const Promotion = () => {
         </div>
     </>
   )
-};
+}
 
-export default Promotion;
+export default DogComfort;

@@ -1,0 +1,480 @@
+import React, { useState } from "react";
+import BreadCrumb from "../../../components/BreadCrumb";
+import Meta from "../../../components/Meta";
+import ReactStars from "react-stars";
+import PromoCard from "../../../components/PromoCard";
+
+const DogClothes = () => {
+    const [grid, setGrid] = useState(4);
+  return (
+    <>
+    <Meta title={"Собаки"} />
+    <BreadCrumb title=" Одяг та амуніція для собак" />
+
+    <div className="store-wrapper home-wrapper-2 py-5">
+          <div className="container-xxl">
+            <div className="row">
+              <div className="col-3">
+                <div className="filter-card rounded-top-3">
+                      <h3 className="filter-title">Бренд</h3>
+                    <div>
+                      <div className="form-check">
+                          <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id=""
+                          />
+                          <label className="form-check-label" htmlFor="">Royal Canin (27)</label>
+                      </div>
+                      <div className="form-check">
+                          <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id=""
+                          />
+                          <label className="form-check-label" htmlFor="">Acana (7)</label>
+                      </div>
+                        <div className="form-check">
+                          <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id=""
+                          />
+                          <label className="form-check-label" htmlFor="">Farmina (3)</label>
+                      </div>
+                      <div className="form-check">
+                          <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id=""
+                          />
+                          <label className="form-check-label" htmlFor="">Hill's (3)</label>
+                      </div>
+                      <div className="form-check">
+                          <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id=""
+                          />
+                          <label className="form-check-label" htmlFor="">1st Choice (1)</label>
+                      </div>
+                      <div className="form-check">
+                          <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id=""
+                          />
+                          <label className="form-check-label" htmlFor="">Amity (0)</label>
+                      </div>
+                    </div>
+                </div>
+                  <div className="filter-card">
+                      <h3 className="filter-title">Тип</h3>
+                    <div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Взуття</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Жилет</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Комбінезон</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Светр</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Костюм</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Дощовик</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Сукня</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Труси</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Шапка</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Нашийники</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Повідці</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Кулони і адресники</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="filter-card">
+                      <h3 className="filter-title">Розмір породи</h3>
+                    <div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Маленька порода</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Середня порода</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Велика порода</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Гігантська порода</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Для всіх пород</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="filter-card">
+                      <h3 className="filter-title">Матеріал</h3>
+                    <div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Бавовна</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Штучне хутро</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Нейлон</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Плащівка</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Льон</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Синтетична тканина</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Силікон</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Сталь</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="filter-card">
+                      <h3 className="filter-title">Сезон</h3>
+                    <div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Зима</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Літо</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Осінь</label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id=""
+                        />
+                        <label className="form-check-label" htmlFor="">Весна</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="filter-card rounded-bottom-3">
+                        <h5 className="filter-title">Ціна</h5>
+                      <div className="d-flex align-items-center gap-10">
+                        <div className="form-floating mb-3">
+                          <input
+                              type="email"
+                              className="form-control"
+                              id="floatingInputFrom"
+                              placeholder="Від"
+                          />
+                            <label htmlFor="floatingInput">Від</label>
+                        </div>
+                        <div className="form-floating mb-3">
+                            <input
+                                type="email"
+                                className="form-control"
+                                id="floatingInputTo"
+                                placeholder="До"
+                            />
+                              <label htmlFor="floatingInput">До</label>
+                        </div>
+                      </div>
+                  </div>
+                  <div className="filter-card rounded-3 mt-4">
+                        <h3 className="filter-title">Випадкові товари</h3>
+                      <div className="random-products mb-3 d-flex">
+                        <div className="w-50">
+                          <img
+                              src="images/product/2.png"
+                              className="img-fluid"
+                              alt="kitty_food"
+                          />
+                        </div>
+                        <div className="w-50">
+                          <h5 className="text-center mt-5">Royal Canin до 12 місяців</h5>
+                            <ReactStars
+                              count={5}
+                              size={24}
+                              value={4.5}
+                              edit={false}
+                              color2={"#ffd700"}
+                            />
+                            <b><span>299 грн</span> &nbsp; <strike>345 грн</strike></b>
+                        </div>
+                      </div>
+                      <div className="random-products d-flex">
+                        <div className="w-50">
+                          <img
+                               src="images/product/2.png"
+                              className="img-fluid"
+                              alt="kitty_food"
+                          />
+                        </div>
+                        <div className="w-50">
+                          <h5 className="text-center mt-5">Royal Canin до 12 місяців</h5>
+                            <ReactStars
+                              count={5}
+                              size={24}
+                              value={4.5}
+                              edit={false}
+                              color2={"#ffd700"}
+                            />
+                            <b><span>299 грн</span> &nbsp; <strike>345 грн</strike></b>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div className="col-9">
+                  <div className="filter-sort-grid mb-4">
+                    <div className="d-flex justify-content-between align-items-center">
+                    <div className="d-flex align-items-center gap-10">
+                      <p className="mb-0 d-block">Сортування:</p>
+                        <select name="" className="form-control form-select" id="">
+                          <option value="manual" selected="selected">за замовчуванням</option>
+                          <option value="best-selling">популярні</option>
+                          <option value="title-ascending">за назвою</option>
+                          <option value="price-ascending">спочатку дешевше</option>
+                          <option value="price-descending">спочатку дорожче</option>
+                          <option value="created-ascending">спочатку нові</option>
+                        </select>
+                    </div>
+                    <div className="d-flex align-items-center gap-10 grid">
+                      <img 
+                        onClick={() => { setGrid(3); console.log("Grid set to 3"); }}
+                        src="images/4-v.svg" 
+                        className="d-block img-fluid" 
+                        alt="grid" 
+                      />
+                      <img
+                        onClick={() => { setGrid(4);}}
+                        src="images/3-v.svg"
+                        className="d-block img-fluid"
+                        alt="grid"
+                      />
+                      <img 
+                        onClick={() => { setGrid(6);}}
+                        src="images/2-v.svg"
+                        className="d-block img-fluid"
+                        alt="grid"
+                      />
+                      <img 
+                        onClick={() => { setGrid(12);}}
+                        src="images/3-h.svg"
+                        className="d-block img-fluid"
+                        alt="grid"
+                      />
+                    </div>
+                    </div>
+                    <div className="products-list pb-5">
+                      <div className="d-flex gap-10 flex-wrap">
+                        <PromoCard key={grid} grid={grid} />
+                      </div>
+                </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </>
+  )
+}
+
+export default DogClothes;

@@ -1,20 +1,20 @@
 import React from 'react'
-import BreadCrumb from "../../components/BreadCrumb";
-import Meta from "../../components/Meta";
+import BreadCrumb from "../../../components/BreadCrumb";
+import Meta from "../../../components/Meta";
 import { Link } from 'react-router-dom';
 
-const Finfish = () => {
-  return (
-    <>
-    <Meta title={"Риби"} />
-    <BreadCrumb title=" Товари для риб" />
+const Reptile = () => {
+    return (
+        <>
+        <Meta title={"Рептілії"} />
+        <BreadCrumb title=" Товари для рептилій" />
 
-    <section className="category-wrapper-1 py-5">
+        <section className="category-wrapper-1 py-5">
           <div className="container-xxl">
             <div className="row">
               <div className="d-flex justify-content-center">
                         <img
-                            src="images/fish_page.jpg"
+                            src="images/Reptile_page.jpeg"
                             className="img-fluid rounded-4"
                             alt="banner dog"
                         />
@@ -27,50 +27,50 @@ const Finfish = () => {
           <div className="row">
             <div className="col-12">
               <div className="d-flex justify-content-between">
-              <Link className="section-heading fs-2">Товари для риб</Link>
+              <Link className="section-heading fs-2">Товари для рептилій</Link>
               <Link className="button-dark">Дивитись все</Link>
               </div>
             </div>
             <div className="col-12 d-flex flex-wrap justify-content-center gap-10">
             <div className="category-card">
-            <div className="card-image">
-                <img src="images/category/fish_tank.jpg" className="img-fluid" alt="food"/>
-            </div>
-                <Link><h3>Акваріуми</h3></Link>
-            </div>
-            <div className="category-card">
               <div className="card-image">
-                  <img src="images/category/fish_food.jpg" className="img-fluid" alt="food"/>
+                  <img src="images/category/reptile_food.jpg" className="img-fluid" alt="food"/>
               </div>
                 <Link><h3>Корм</h3></Link>
             </div>
             <div className="category-card">
             <div className="card-image">
-                <img src="images/category/fish_soil.jpg" className="img-fluid" alt="food"/>
+                <img src="images/category/reptile_vet.png" className="img-fluid" alt="food"/>
             </div>
-                <Link><h3>Ґрунт</h3></Link>
-            </div>
-            <div className="category-card">
-            <div className="card-image">
-                <img src="images/category/fish_chemistry.jpg" className="img-fluid" alt="food"/>
-            </div>
-                <Link><h3>Хімія</h3></Link>
+                <Link><h3>Ветпрепарати</h3></Link>
             </div>
             <div className="category-card">
             <div className="card-image">
-                <img src="images/category/fish_decoration.jpg" className="img-fluid" alt="food"/>
+                <img src="images/category/reptile_cage.jpg" className="img-fluid" alt="food"/>
+            </div>
+                <Link><h3>Тераріуми</h3></Link>
+            </div>
+            <div className="category-card">
+            <div className="card-image">
+                <img src="images/category/reptile_caves.jpg" className="img-fluid" alt="food"/>
             </div>
                 <Link><h3>Декорації</h3></Link>
             </div>
             <div className="category-card">
             <div className="card-image">
-                <img src="images/category/fish_equipment.jpg" className="img-fluid" alt="food"/>
+                <img src="images/category/reptile_equipment.jpg" className="img-fluid" alt="food"/>
             </div>
                 <Link><h3>Обладнення</h3></Link>
             </div>
             <div className="category-card">
             <div className="card-image">
-                <img src="images/category/fish_product.jpg" className="img-fluid" alt="food"/>
+                <img src="images/category/reptile_feeder.jpg" className="img-fluid" alt="food"/>
+            </div>
+                <Link><h3>Годівниці</h3></Link>
+            </div>
+            <div className="category-card">
+            <div className="card-image">
+                <img src="images/category/reptile_someth.jpg" className="img-fluid" alt="food"/>
             </div>
                 <Link><h3>Інше</h3></Link>
             </div>
@@ -78,9 +78,8 @@ const Finfish = () => {
           </div>
         </div>
       </section>
-
-    </>
-  )
+        </>
+      )
 }
 
-export default Finfish
+export default Reptile
